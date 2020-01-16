@@ -8,11 +8,12 @@ import { ApolloProvider } from "react-apollo";
 
 
 const client = new ApolloClient({
-  uri: "http://23.239.19.17:8000/graphql",
-  fetchOptions: {
+  //uri: "http://23.239.19.17:8000/graphql",
+   uri: "https://rickandmortyapi.com/graphql",
+  /*fetchOptions: {
     mode: 'no-cors',
-  }
- // uri: "https://rickandmortyapi.com/graphql"
+  }*/
+ 
 });
 
 

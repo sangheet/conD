@@ -11,6 +11,7 @@ const GetCharactersQuery = () => {
                     results{
                             id
                             name
+                            image
                             }
                     }
           
@@ -21,7 +22,7 @@ const GetCharactersQuery = () => {
           if (error) return <div className="mainContent">Ocurrió un error conectando a base de datos, intente nuevamente por favor!</div>;
   
           return data.characters.results.map(character => {
-            return <table><tbody><tr><td key={character.id}>{character.name}</td><td key={character.id+character.id}>ID: {character.id}</td></tr></tbody></table>;
+            return <table><tbody><tr><td><img src={character.image} alt={character.name} width="20px"height="20px"/></td><td key={character.id}>{character.name}</td><td key={character.id+character.id}>ID: {character.id}</td></tr></tbody></table>;
           });
         }}
       </Query>

@@ -57,6 +57,20 @@ tr:hover {
     transform: rotate(360deg);
   }
 }
+
+@keyframes floating {
+  0% {
+    margin-top: 5%;
+  }
+  50% {
+    margin-top: 3%;
+  }
+  100% {
+    margin-top: 5%;
+  }
+}
+
+
 p {
   font-size: 12px;
   margin: 5px;
