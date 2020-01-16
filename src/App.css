@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.App {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 4.5fr 0.1fr 1.2fr;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 0.5s;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+table {
+  width: 100%;
+  padding: 5px;
+}
+
+td{
+  padding-left: 25px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  width: 20%;
+}
+tr:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+p {
+  font-size: 12px;
+  margin: 5px;
+}
+.mainContainer {
+  width: 95%;
+  display: grid;
+  min-height: 90vh;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-left: 4%;
+  margin-bottom: 20px;
+  display: inline;
+}
+.mainContent {
+  font-size: 14px;
+  padding-left: 25px;
+  padding-bottom: 5px;
+  padding-top: 25px;
+  vertical-align: top;
+  display: inline;
+}
+.widgetsContainer {
+  display: grid;
+  width: 95%;
+  height: 90vh;
+  margin-top: 8%;
+  margin-left: 5%;
+  right: 0;
+  position: relative;
+  float: right;
+  transition: all .5s;
+  text-align: center;
+}
+.widget {
+  width: 100%;
+  height: 99%;
+  display: grid;
+  border-radius: 12px 0 0 12px;
+  float: right;
+  right: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+  z-index: 1;
+  cursor: pointer;
+}
+.widget:hover {
+  transform: scale(1.05);
+  transition: all .5s;
+  transition-delay: .3s;
+  z-index: 5;
+}
+.widgetNumber {
+  opacity: .8;
+  margin-top: 10%;
+  font-size: 100px;
+}
+
+
+.sideMenu {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -18%;
+  background-color: #191919;
+  transition: all 0.5s;
+  color: white !important;
+  text-align: center;
+}
+.sideMenuEx {
+  left: 0;
+  transition: all 0.5s;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  background-color: #FFAC06;
+  background-image: url("./img/wood-6.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+  border: 4px double #FFAC06;
+  margin-left: 25%;
+  margin-top: 5%;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.avatar:hover {
+  background-size: 180%;
+  transition: all .5s;
+  transform: rotate(5deg);
+}
+.dot {
+  margin-top: 120%;
+  border-radius: 100px;
+  background-image: url("./img/Aright.png");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-right: 5px;
+  transition: all .5s;
+  cursor: pointer;
+}
+.dotPos {
+  transform: rotate(-180deg);
+  margin-top: 5%;
+  margin-right: 35px;
+  transition: all .5s;
+  width: 40px;
+  height: 40px;
+}
+.dotW {
+  margin-left: 5px;
+  margin-top: 350px;
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  transition: all .5s;
+  float: left;
+  position: sticky;
+}
+.dotW:hover {
+  transform: scale(2);
+}
+
+.shadow {
+  box-shadow: 2px 3px 10px 4px #150a461c;
+}
+.blackBack {
+  background-color: #191919;
+  color: white!important;
+}
+.whiteBack {
+  background-color: white;
+}
+.yellowBack {
+  background-color: #FDD32A;
+}
+
+.mainTitle {
+  font-size: 32px;
+  margin-left: 25px;
+  margin-top: 15px;
+  color: #282c34;
+}
+
+/* Scrollbars*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1A355B;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FFAC06;
+}
