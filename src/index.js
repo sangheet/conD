@@ -8,8 +8,9 @@ import { ApolloProvider } from "react-apollo";
 
 
 const client = new ApolloClient({
-  //uri: "http://23.239.19.17:8000/graphql",
-   uri: "https://rickandmortyapi.com/graphql",
+  //uri: "https://rickandmortyapi.com/graphql",
+  uri: "http://23.239.19.17:9999/graphql/",
+  //uri: "https://n161.tech/api/dummyapi/user",
   /*fetchOptions: {
     mode: 'no-cors',
   }*/

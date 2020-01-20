@@ -9,11 +9,12 @@ import {GetCharactersQuery , GetEdificiosQuery} from "./queries/Queries";
 
 
 function App() {
-  
+ 
+
   return (
     <div className="App">
       <SideMenu />
-      <MainContainer title="Edificios" content=<GetCharactersQuery/>/>
+      <MainContainer title="Edificios" content=<GetEdificiosQuery/>/>
       <div className="dotW"></div>
       <SideWidgets />
     </div>
