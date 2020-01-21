@@ -24,8 +24,8 @@ export default class MainContainer extends Component {
         return (
             <div className="mainContainer shadow ">
                 <div className="mainTitle">{this.props.title}</div>
-                <div className="mainContent">{this.props.content}</div>
-                <Modal content=<AddEdifForm/> />
+                <div className="mainContent"><div className="gridResults">{this.props.content}</div></div>
+                <Modal content=<AddEdifForm/>/>
             </div>
         )
     }

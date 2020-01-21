@@ -3,7 +3,7 @@ import './App.css';
 import MainContainer from './components/mainContainer';
 import SideMenu from './components/SideMenu';
 import SideWidgets from './components/SideWidgets';
-import {GetCharactersQuery , GetEdificiosQuery} from "./queries/Queries";
+import {GetEdificiosQuery} from "./queries/Queries";
 
 
 
